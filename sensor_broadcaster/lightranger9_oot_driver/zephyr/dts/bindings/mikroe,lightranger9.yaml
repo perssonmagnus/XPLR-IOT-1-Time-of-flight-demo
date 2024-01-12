@@ -1,0 +1,18 @@
+#
+# Copyright 2023 u-blox Ltd
+# 
+# Apache License, Version 2.0
+# http://www.apache.org/licenses/LICENSE-2.0
+
+description: MikroE LightRanger9 (TMF8828) Time Of Flight sensor
+
+compatible: "mikroe,lightranger9"
+
+include: i2c-device.yaml
+
+properties:
+  control-gpios:
+    type: phandle-array
+    required: true
+    description:
+      Pin on which sensor data will be read from.

@@ -1,0 +1,8 @@
+#Ignore build subdirs
+**/build*
+
+#Ignore VS Code workspaces
+**/*.code-workspace
+
+#Ignore VS Code project settigns
+**/.vscode

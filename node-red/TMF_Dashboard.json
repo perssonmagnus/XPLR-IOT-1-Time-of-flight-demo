@@ -1,0 +1,1098 @@
+[
+    {
+        "id": "ce9a4afe24e50ef9",
+        "type": "tab",
+        "label": "Time Of Flight Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9fb7cdb041542297",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#ff8040",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "58c2aa06.ef46e4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4bd07ae491cf1bb6",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "58c2aa06.ef46e4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b56e0b69f8543dad",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "c6cd888985de1e18",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b4103460a18f54ef",
+        "type": "ui_group",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Time Of Flight Demo",
+        "tab": "c6cd888985de1e18",
+        "order": 2,
+        "disp": true,
+        "width": "18",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "f9c4ddcde4386c77",
+        "type": "mqtt-broker",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Time Of Flight",
+        "broker": "mqtt.thingstream.io",
+        "port": "1883",
+        "clientid": "device:67508db0-b278-4451-a973-d9f6cd6aa205",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "43200",
+        "cleansession": false,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c6cd888985de1e18",
+        "type": "ui_tab",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Time Of Flight Demo",
+        "icon": "fa-microchip",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1d85010f9d48788e",
+        "type": "ui_template",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "name": "customise background",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<style> \n\n#nr-dashboard-toolbar {\n    background-color: #ff6e59;\n}\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5a93ba9cd1c8b56",
+        "type": "mqtt in",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Time of Flight MQTT In",
+        "topic": "timeofflightdashboard",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "f9c4ddcde4386c77",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "5057e52fc19b95f6",
+                "b849e99de2162fe7",
+                "db3d692bf7451523"
+            ]
+        ]
+    },
+    {
+        "id": "0739eff1799599c3",
+        "type": "ui_template",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": " <iframe src=\"/XPLR-IOT-1\" height=350 width=400></iframe>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 80,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5057e52fc19b95f6",
+        "type": "debug",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Main JSON Payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0f6d5868ef6192da",
+        "type": "template",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Results Number",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.resno}}",
+        "output": "str",
+        "x": 620,
+        "y": 280,
+        "wires": [
+            [
+                "a7900990a3e2492c"
+            ]
+        ]
+    },
+    {
+        "id": "a7900990a3e2492c",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 5,
+        "width": "6",
+        "height": "2",
+        "name": "Results Number",
+        "label": "Results Number",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 960,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "196ab0fcbf8ded01",
+        "type": "ui_table",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "name": "Distance Results Map 1",
+        "order": 14,
+        "width": "9",
+        "height": "5",
+        "columns": [
+            {
+                "field": "c1",
+                "title": "C1",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c2",
+                "title": "C2",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c3",
+                "title": "C3",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c4",
+                "title": "C4",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c5",
+                "title": "C5",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c6",
+                "title": "C6",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c7",
+                "title": "C7",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c8",
+                "title": "C8",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 990,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b849e99de2162fe7",
+        "type": "json",
+        "z": "ce9a4afe24e50ef9",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "0f6d5868ef6192da",
+                "df53195a8f1c6d7d",
+                "4a2b789646e6f19d",
+                "446fd63eb772c356",
+                "2285ed7d6f773181",
+                "8066f26ce2311e76",
+                "d8c5e297e6a45056"
+            ]
+        ]
+    },
+    {
+        "id": "df53195a8f1c6d7d",
+        "type": "template",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Sensor Temperature (°C)",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.temp}}",
+        "output": "str",
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "df08ae3bdaa541d1"
+            ]
+        ]
+    },
+    {
+        "id": "df08ae3bdaa541d1",
+        "type": "ui_chart",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Sensor Temperature",
+        "group": "b4103460a18f54ef",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "label": "Sensor Temperature (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 980,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a2b789646e6f19d",
+        "type": "template",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Valid Results",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.valres}}",
+        "output": "str",
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "3abbbe97ba39d3b1"
+            ]
+        ]
+    },
+    {
+        "id": "3abbbe97ba39d3b1",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 6,
+        "width": "6",
+        "height": "2",
+        "name": "Valid Results",
+        "label": "Valid Results",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 950,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "446fd63eb772c356",
+        "type": "template",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Ambient Light",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.ambli}}",
+        "output": "str",
+        "x": 620,
+        "y": 460,
+        "wires": [
+            [
+                "494d817ad2b0a852"
+            ]
+        ]
+    },
+    {
+        "id": "494d817ad2b0a852",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 7,
+        "width": "6",
+        "height": "2",
+        "name": "Ambient Light",
+        "label": "Ambient Light",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 960,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "2285ed7d6f773181",
+        "type": "template",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Photons Count",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.phocnt}}",
+        "output": "str",
+        "x": 620,
+        "y": 520,
+        "wires": [
+            [
+                "773dcf073efed2e3"
+            ]
+        ]
+    },
+    {
+        "id": "773dcf073efed2e3",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 8,
+        "width": "6",
+        "height": "2",
+        "name": "Photons Count",
+        "label": "Photons Count",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 960,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8066f26ce2311e76",
+        "type": "template",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Reference Count",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.refcnt}}",
+        "output": "str",
+        "x": 630,
+        "y": 580,
+        "wires": [
+            [
+                "1cac1d36f352a4e4"
+            ]
+        ]
+    },
+    {
+        "id": "1cac1d36f352a4e4",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 9,
+        "width": "6",
+        "height": "2",
+        "name": "Reference Count",
+        "label": "Reference Count",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 970,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d8c5e297e6a45056",
+        "type": "template",
+        "z": "ce9a4afe24e50ef9",
+        "name": "System Ticks",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.syst}}",
+        "output": "str",
+        "x": 610,
+        "y": 640,
+        "wires": [
+            [
+                "c91840393219cde6"
+            ]
+        ]
+    },
+    {
+        "id": "c91840393219cde6",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 10,
+        "width": "6",
+        "height": "2",
+        "name": "System Ticks",
+        "label": "System Ticks",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 950,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "db3d692bf7451523",
+        "type": "json",
+        "z": "ce9a4afe24e50ef9",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "2679a73a04bc3a4f",
+                "c687c6ad8784dde4"
+            ]
+        ]
+    },
+    {
+        "id": "91e9face5b50e78f",
+        "type": "debug",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Exatrcted Measurements Array",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "2679a73a04bc3a4f",
+        "type": "function",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Results Array Maps Table",
+        "func": "/**\n * ===========================================\n * Variable declarations\n * ===========================================\n **/\nvar msg1 = {};\nvar mobj1 = {\n  res : []\n};\nvar msg2 = {};\nvar mobj2 = {\n  res : []\n}\n\n/**\n * ===========================================\n * Array manipulations\n * ===========================================\n **/\nfor (let index = 0; index < msg.payload.res.map1.length; index+=8) {\n  mobj1.res.push({\n    \"c1\": msg.payload.res.map1[index + 0],\n    \"c2\": msg.payload.res.map1[index + 1],\n    \"c3\": msg.payload.res.map1[index + 2],\n    \"c4\": msg.payload.res.map1[index + 3],\n    \"c5\": msg.payload.res.map1[index + 4],\n    \"c6\": msg.payload.res.map1[index + 5],\n    \"c7\": msg.payload.res.map1[index + 6],\n    \"c8\": msg.payload.res.map1[index + 7],\n  });\n}\n\nfor (let index = 0; index < msg.payload.res.map2.length; index+=8) {\n  mobj2.res.push({\n    \"c1\": msg.payload.res.map2[index + 0],\n    \"c2\": msg.payload.res.map2[index + 1],\n    \"c3\": msg.payload.res.map2[index + 2],\n    \"c4\": msg.payload.res.map2[index + 3],\n    \"c5\": msg.payload.res.map2[index + 4],\n    \"c6\": msg.payload.res.map2[index + 5],\n    \"c7\": msg.payload.res.map2[index + 6],\n    \"c8\": msg.payload.res.map2[index + 7]\n  });\n}\n\n/**\n * ===========================================\n * Results\n * ===========================================\n **/\n \nmsg1.topic = \"mobj1res\";\nmsg1.payload = mobj1.res;\nmsg2.topic = \"mobj2res\";\nmsg2.payload = mobj2.res;\n\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 760,
+        "wires": [
+            [
+                "196ab0fcbf8ded01",
+                "91e9face5b50e78f"
+            ],
+            [
+                "32bdaed8567d2a26",
+                "91e9face5b50e78f"
+            ]
+        ]
+    },
+    {
+        "id": "32bdaed8567d2a26",
+        "type": "ui_table",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "name": "Distance Results Map 2",
+        "order": 15,
+        "width": "9",
+        "height": "5",
+        "columns": [
+            {
+                "field": "c1",
+                "title": "C1",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c2",
+                "title": "C2",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c3",
+                "title": "C3",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c4",
+                "title": "C4",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c5",
+                "title": "C5",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c6",
+                "title": "C6",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c7",
+                "title": "C7",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "c8",
+                "title": "C8",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 990,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c37edc39c420c8b6",
+        "type": "ui_heat_map",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 18,
+        "width": "6",
+        "height": "6",
+        "name": "Heat Map 1",
+        "rows": "8",
+        "columns": "8",
+        "minMax": true,
+        "minimumValue": "0",
+        "maximumValue": "800",
+        "backgroundType": "color",
+        "backgroundColor": "#c0c0c0",
+        "image": "never",
+        "radius": "35",
+        "opacity": "0",
+        "blur": "1",
+        "showValues": false,
+        "gridType": "vals",
+        "valuesDecimals": 0,
+        "showLegend": false,
+        "legendType": "none",
+        "legendDecimals": 0,
+        "legendCount": 2,
+        "x": 950,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c687c6ad8784dde4",
+        "type": "function",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Results Array Maps Heat",
+        "func": "/**\n * ===========================================\n * Variable declarations\n * ===========================================\n **/\nvar msg1h = {};\nvar mobj1h = {\n  res : []\n};\n\nvar msg2h = {};\nvar mobj2h = {\n  res : []\n}\n\nvar msgconsh = {};\nvar mobjconsh = {\n  res: []\n}\n/**\n * ===========================================\n * Array manipulations\n * ===========================================\n **/\n\n// Populate 1st map array for heatmap\nfor (let index = 0; index < msg.payload.res.map1.length; index++) {\n  mobj1h.res.push(\n    {[\"h\" + (index + 1)] : msg.payload.res.map1[parseInt(index / 8) + (8 * (index % 8))]}\n    );\n}\n\n// Clone map 1 array to consolidated array\nmobjconsh.res = JSON.parse(JSON.stringify(mobj1h.res));\n\n// Populate 2nd map array for heatmap\nfor (let index = 0; index < msg.payload.res.map2.length; index++) {\n  mobj2h.res.push(\n    {[\"h\" + (index + 1)] : msg.payload.res.map2[parseInt(index / 8) + (8 * (index % 8))]}\n    );\n  // If consolidated has a 0 value on cell\n  // update it with an existing one from map 2\n  if (Object.values(mobjconsh.res[index])[0] == 0) {\n    mobjconsh.res[index][\"h\" + (index + 1)] = msg.payload.res.map2[parseInt(index / 8) + (8 * (index % 8))];\n  }\n}\n\n\n\n/**\n * ===========================================\n * Results\n * ===========================================\n **/\n\n // Populate arrays and topics messages\nmsg1h.topic = \"mobj1hres\";\nmsg1h.payload = mobj1h.res;\n\nmsg2h.topic = \"mobj2hres\";\nmsg2h.payload = mobj2h.res;\n\nmsgconsh.topic = \"msgconsres\";\nmsgconsh.payload = mobjconsh.res;\n\n// Return the 3 messages\nreturn [msg1h, msg2h, msgconsh];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "c37edc39c420c8b6",
+                "0eb8bbcc496beb56"
+            ],
+            [
+                "3bc68098b8acedc6",
+                "0eb8bbcc496beb56"
+            ],
+            [
+                "0eb8bbcc496beb56",
+                "1d9e5c7660a3d348"
+            ]
+        ]
+    },
+    {
+        "id": "0eb8bbcc496beb56",
+        "type": "debug",
+        "z": "ce9a4afe24e50ef9",
+        "name": "Exatrcted Measurements Heat Map",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "3bc68098b8acedc6",
+        "type": "ui_heat_map",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 19,
+        "width": "6",
+        "height": "6",
+        "name": "Heat Map 2",
+        "rows": "8",
+        "columns": "8",
+        "minMax": true,
+        "minimumValue": "0",
+        "maximumValue": "800",
+        "backgroundType": "color",
+        "backgroundColor": "#c0c0c0",
+        "image": "never",
+        "radius": "35",
+        "opacity": "0",
+        "blur": "1",
+        "showValues": false,
+        "gridType": "vals",
+        "valuesDecimals": 0,
+        "showLegend": false,
+        "legendType": "none",
+        "legendDecimals": 0,
+        "legendCount": 2,
+        "x": 950,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b3fd5ef3f479e50",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 12,
+        "width": "9",
+        "height": "1",
+        "name": "",
+        "label": "Results Array Map Object 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 440,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "74a823b3b2a9e094",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 16,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Heat Map Object 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 410,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "bfaee9f70d99f753",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 17,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Heat Map Object 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 630,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d5e06cd46198c74f",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 13,
+        "width": "9",
+        "height": "1",
+        "name": "",
+        "label": "Results Array Map Object 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 720,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "1d9e5c7660a3d348",
+        "type": "ui_heat_map",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 19,
+        "width": "6",
+        "height": "6",
+        "name": "Heat Map Consolidated",
+        "rows": "8",
+        "columns": "8",
+        "minMax": true,
+        "minimumValue": "0",
+        "maximumValue": "800",
+        "backgroundType": "color",
+        "backgroundColor": "#c0c0c0",
+        "image": "never",
+        "radius": "35",
+        "opacity": "0",
+        "blur": "1",
+        "showValues": false,
+        "gridType": "vals",
+        "valuesDecimals": 0,
+        "showLegend": false,
+        "legendType": "none",
+        "legendDecimals": 0,
+        "legendCount": 2,
+        "x": 990,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78b4ddf3029f0c61",
+        "type": "ui_text",
+        "z": "ce9a4afe24e50ef9",
+        "group": "b4103460a18f54ef",
+        "order": 17,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Heat Map Consolidated",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 870,
+        "y": 100,
+        "wires": []
+    }
+]

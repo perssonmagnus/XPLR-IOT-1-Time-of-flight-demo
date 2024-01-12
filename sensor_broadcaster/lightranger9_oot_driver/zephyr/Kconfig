@@ -1,0 +1,7 @@
+# MikroE LightRanger9 Time of Flight Sensor
+
+config LIGHTRANGER9
+    bool "LightRanger9 time of Flight sensor"
+    depends on I2C
+    help
+      Enable driver for LightRanger9 (TMF8828) time of flight sensor.
